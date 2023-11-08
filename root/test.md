@@ -10,14 +10,13 @@ permalink: /test/
         </style>
     </header>
 <body>
-<p> [[Projet Alternance]] #Projet_Alternance #IHM</p>
-<p>![[EncoInterface.py]]
-![[Bibliothèque_Perso.py]]</p>
-<h1 id="objectif">Objectif</h1>
-<blockquote>
-<p>L&#39;objectif de l&#39;Interface Homme Machine est de faire le lien entre les actions de l&#39;humain et celles de la machine. Elle permet donc à l&#39;utilisateur de demander au programme de réaliser une action précise ou d&#39;entrer certains paramètres manuellement, alors que le programme est déjà en cours d&#39;utilisation. L&#39;IHM permet également à l&#39;utilisateur de voir le programme en action pour interagir avec lui de manière plus aisée.</p>
-<h1 id="r-flexion">Réflexion</h1>
-</blockquote>
+    <p> [[Projet Alternance]] #Projet_Alternance #IHM</p>
+    <p>![[EncoInterface.py]]![[Bibliothèque_Perso.py]]</p>
+    <h1 id="objectif">Objectif</h1>
+    <blockquote>
+        <p>L&#39;objectif de l&#39;Interface Homme Machine est de faire le lien entre les actions de l&#39;humain et celles de la machine. Elle permet donc à l&#39;utilisateur de demander au programme de réaliser une action précise ou d&#39;entrer certains paramètres manuellement, alors que le programme est déjà en cours d&#39;utilisation. L&#39;IHM permet également à l&#39;utilisateur de voir le programme en action pour interagir avec lui de manière plus aisée.</p>
+    </blockquote>
+    <h1 id="r-flexion">Réflexion</h1>
 <p>Pour une IHM optimale, il est important de bien réfléchir à son organisation. En effet, il est impératif que l&#39;IHM soit intuitive pour que les utilisateurs puissent l&#39;utiliser à son plein potentiel sans difficulté.</p>
 <p>Celle-ci est, pour le moment, composée d&#39;une seule fenêtre, qui elle possède 3 onglets. Chaque onglet à son propre rôle pour que l&#39;utilisateur ne soit pas perdu.</p>
 <ol>
