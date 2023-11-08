@@ -3,7 +3,7 @@ layout: page
 title: "https://baptmania.github.io"
 permalink: /test/
 ---
-<DOCTYPE html5>
+<!DOCTYPE html>
 <html>
     <header>
         <style>
