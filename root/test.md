@@ -5,11 +5,11 @@ permalink: /test/
 ---
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
         <style>
             h1{color: #37A9BE;}
         </style>
-    </header>
+    </head>
 <body>
     <p> [[Projet Alternance]] #Projet_Alternance #IHM</p>
     <p>![[EncoInterface.py]]![[Bibliothèque_Perso.py]]</p>
