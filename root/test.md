@@ -11,38 +11,39 @@ permalink: /test/
         </style>
     </head>
 <body>
-    <p> [[Projet Alternance]] #Projet_Alternance #IHM</p>
-    <p>![[EncoInterface.py]]![[Bibliothèque_Perso.py]]</p>
     <h1 id="objectif">Objectif</h1>
     <blockquote>
         <p>L&#39;objectif de l&#39;Interface Homme Machine est de faire le lien entre les actions de l&#39;humain et celles de la machine. Elle permet donc à l&#39;utilisateur de demander au programme de réaliser une action précise ou d&#39;entrer certains paramètres manuellement, alors que le programme est déjà en cours d&#39;utilisation. L&#39;IHM permet également à l&#39;utilisateur de voir le programme en action pour interagir avec lui de manière plus aisée.</p>
     </blockquote>
     <h1 id="r-flexion">Réflexion</h1>
-<p>Pour une IHM optimale, il est important de bien réfléchir à son organisation. En effet, il est impératif que l&#39;IHM soit intuitive pour que les utilisateurs puissent l&#39;utiliser à son plein potentiel sans difficulté.</p>
-<p>Celle-ci est, pour le moment, composée d&#39;une seule fenêtre, qui elle possède 3 onglets. Chaque onglet à son propre rôle pour que l&#39;utilisateur ne soit pas perdu.</p>
-<ol>
-<li>Le premier onglet permet d&#39;encoder toutes les images présentes dans le programme. </li>
-<li>Le second onglet  permet de lancer le programme de reconnaissance faciale.</li>
-<li>Le dernier onglet permet d&#39;ajouter un nouvel usager au programme en prenant soin de remplir toutes les informations ainsi qu&#39;en prenant une photographie dudit usager.</li>
-</ol>
-<hr>
-<h1 id="programmation">Programmation</h1>
-<h3 id="imports">Imports</h3>
-<p>Pour débuter, nous devrons faire appel à toutes les librairies que nous auront besoin pour le bon fonctionnement du programme.</p>
-<pre><code class="lang-Python"><span class="hljs-keyword">import</span> tkinter <span class="hljs-keyword">as</span> tk  
-from tkcalendar <span class="hljs-keyword">import</span> DateEntry  
-from tkinter <span class="hljs-keyword">import</span> ttk  
-from tkinter.messagebox <span class="hljs-keyword">import</span> showerror  
-from PIL <span class="hljs-keyword">import</span> ImageTk  
-from PIL <span class="hljs-keyword">import</span> Image  
-<span class="hljs-keyword">import</span> <span class="hljs-built_in">time</span>  
-from functools <span class="hljs-keyword">import</span> partial  
-from encodeur_photo <span class="hljs-keyword">import</span> *  
-<span class="hljs-keyword">import</span> ImageEncoding  
-<span class="hljs-keyword">import</span> FacialRecognition  
-<span class="hljs-keyword">import</span> Picture
-</code></pre>
-<hr>
+    <p>Pour une IHM optimale, il est important de bien réfléchir à son organisation. En effet, il est impératif que l&#39;IHM soit intuitive pour que les utilisateurs puissent l&#39;utiliser à son plein potentiel sans difficulté.</p>
+    <p>Celle-ci est, pour le moment, composée d&#39;une seule fenêtre, qui elle possède 3 onglets. Chaque onglet à son propre rôle pour que l&#39;utilisateur ne soit pas perdu.</p>
+    <ol>
+        <li>Le premier onglet permet d&#39;encoder toutes les images présentes dans le programme. </li>
+        <li>Le second onglet  permet de lancer le programme de reconnaissance faciale.</li>
+        <li>Le dernier onglet permet d&#39;ajouter un nouvel usager au programme en prenant soin de remplir toutes les informations ainsi qu&#39;en prenant une photographie dudit usager.</li>
+    </ol>
+    <hr>
+        <h1 id="programmation">Programmation</h1>
+        <h3 id="imports">Imports</h3>
+        <p>Pour débuter, nous devrons faire appel à toutes les librairies que nous auront besoin pour le bon fonctionnement du programme.</p>
+        <pre>
+            <code class="lang-Python">
+                <span class="hljs-keyword">import</span> tkinter <span class="hljs-keyword">as</span> tk  
+                from tkcalendar <span class="hljs-keyword">import</span> DateEntry  
+                from tkinter <span class="hljs-keyword">import</span> ttk  
+                from tkinter.messagebox <span class="hljs-keyword">import</span> showerror  
+                from PIL <span class="hljs-keyword">import</span> ImageTk  
+                from PIL <span class="hljs-keyword">import</span> Image                      
+                <span class="hljs-keyword">import</span> <span class="hljs-built_in">time</span> 
+                from functools <span class="hljs-keyword">import</span> partial 
+                from encodeur_photo <span class="hljs-keyword">import</span> *  
+                <span class="hljs-keyword">import</span> ImageEncoding  
+                <span class="hljs-keyword">import</span> FacialRecognition  
+                <span class="hljs-keyword">import</span> Picture
+            </code>
+        </pre>
+    <hr>
 <h3 id="la-classe-app">La classe App</h3>
 <p>Le programme sera une application et celle-ci nécessite une classe.</p>
 <h4 id="initialisation">Initialisation</h4>
