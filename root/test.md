@@ -3,6 +3,13 @@ layout: page
 title: "https://baptmania.github.io"
 permalink: /test/
 ---
+<html>
+    <header>
+        <style>
+            h1{color: #37A9BE;}
+        </style>
+    </header>
+<body>
 <p> [[Projet Alternance]] #Projet_Alternance #IHM</p>
 <p>![[EncoInterface.py]]
 ![[Bibliothèque_Perso.py]]</p>
@@ -493,3 +500,5 @@ Le header possède également un bouton qui permet à l&#39;utilisateur d&#39;ex
                   message=<span class="hljs-string">'Veuillez d\'abord indiquer toutes les informations avant d\'enregistrer les informations.'</span>)
 </code></pre>
 <p>Les informations sont vérifiées puis affichées dans le body.</p>
+</body>
+</html>
