@@ -19,7 +19,9 @@ permalink: /alternance/interface
             .prog{background-color: #2B3051;}
             .quote{color: #8E93AF;}
             .hljs-keyword{color: #F3B549;}
-            .hljs-string{color: #36933C;}
+            .hljs-string{
+                color: #36933C;
+                font-style: italic;}
         </style>
     </head>
 <body>
@@ -62,9 +64,7 @@ permalink: /alternance/interface
 <p>Il faut donc tout d&#39;abord initialiser la classe avec toutes les variables dont elle a besoin, ses variables de configuration et l&#39;exécution des méthodes obligatoires.</p>
 <pre>
     <code class="lang-Python">class App(tk.Tk):  
-        <span class="hljs-string">""</span>
-        <span class="hljs-string">"Application d'encodage de photographies et de reconnaissance faciale"</span>
-        <span class="hljs-string">""</span>  
+        <span class="hljs-string">"""Application d'encodage de photographies et de reconnaissance faciale"""</span>  
         def __init__(<span class="hljs-keyword">self</span>):  
             <span class="hljs-keyword">super</span>().__init__()  
             #   Création des variables  
