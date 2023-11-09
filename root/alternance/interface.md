@@ -62,8 +62,9 @@ permalink: /alternance/interface
     <p>Le programme sera une application et celle-ci nécessite une classe.</p>
     <h4 id="initialisation">Initialisation</h4>
     <p>Il faut donc tout d&#39;abord initialiser la classe avec toutes les variables dont elle a besoin, ses variables de configuration et l&#39;exécution des méthodes obligatoires.</p>
-    <pre>
-        <code class="lang-Python"><span class=".hjls-def">class</span> App(tk.Tk):  
+    <div class="code-zone">
+        <pre class="language-python">
+            <code class="lang-Python"><span class=".hjls-def">class</span> App(tk.Tk):  
             <span class="hljs-string">"""Application d'encodage de photographies et de reconnaissance faciale"""</span>  
             <span class=".hjls-def">def</span> <span class="hljs-init">__init__</span>(<span class="hljs-self">self</span>):  
                 <span class="hljs-keyword">super</span>().<span class="hljs-init">__init__</span>()  
@@ -121,7 +122,11 @@ permalink: /alternance/interface
                 <span class="hljs-self">self</span>.create_tab_2()  
                 <span class="hljs-self">self</span>.create_tab_3()
         </code>
-    </pre>
+        </pre>
+        <div class="button-c">
+            <button type="button" class="copy-b">Copier</button>
+        </div>
+    </div>
     <hr>
     <h4 id="les-m-thodes-obligatoires">Les méthodes obligatoires</h4>
     <p>Les méthodes obligatoires sont ici la création des trois onglets de la fenêtre.</p>
