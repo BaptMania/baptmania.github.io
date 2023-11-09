@@ -9,6 +9,7 @@ permalink: /test/
             html{background-color: #10111A;}
             body{background-color: #1D2139;}
             h1{color: #37A9BE;}
+            p{color: #DEE0EA;}
             blockquote{color: #A954CA;}
             code{background-color: #2B3051;}
             .hljs-keyword{color: #F3B549;}
