@@ -10,7 +10,7 @@ permalink: /test/
             body{background-color: #1D2139;}
             h1{color: #37A9BE;}
             blockquote{color: #A954CA;}
-            .lang-Python{background-color: #2B3051;}
+            code{background-color: #2B3051;}
             .hljs-keyword{color: #F3B549;}
         </style>
     </head>
