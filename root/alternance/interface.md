@@ -42,6 +42,7 @@ permalink: /alternance/interface
                         <span class="hljs-keyword">import</span> Picture
                     </code>
                 </pre>
+                <button type="button" class="copy-b">Copier</button>
             </div>
         <hr>
     <h3 id="la-classe-app">La classe App</h3>
