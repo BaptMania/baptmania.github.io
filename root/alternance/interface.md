@@ -41,7 +41,8 @@ permalink: /alternance/interface
         <h1 id="programmation">Programmation</h1>
         <h3 id="imports">Imports</h3>
         <p>Pour débuter, nous devrons faire appel à toutes les librairies que nous auront besoin pour le bon fonctionnement du programme.</p>
-        <pre class="prog">
+        <div class="prog">
+        <pre>
             <code class="lang-Python">
                 <span class="hljs-keyword">import</span> tkinter <span class="hljs-keyword">as</span> tk  
                 <span class="hljs-keyword">from</span> tkcalendar <span class="hljs-keyword">import</span> DateEntry  
@@ -57,6 +58,7 @@ permalink: /alternance/interface
                 <span class="hljs-keyword">import</span> Picture
             </code>
         </pre>
+        </div>
     <hr>
 <h3 id="la-classe-app">La classe App</h3>
 <p>Le programme sera une application et celle-ci nécessite une classe.</p>
