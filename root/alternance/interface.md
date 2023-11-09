@@ -1,17 +1,23 @@
 ---
 layout: page
 title: "https://baptmania.github.io"
-permalink: /test/
+permalink: /alternance/interface
 ---
 <html>
     <head>
         <style>
             html{background-color: #10111A;}
-            body{background-color: #1D2139;}
+            body{background-color: #151827;}
             h1{color: #37A9BE;}
+            h2{color: #37A9BE;}
+            h3{color: #37A9BE;}
+            h4{color: #37A9BE;}
+            h5{color: #37A9BE;}
+            h6{color: #37A9BE;}
             p{color: #DEE0EA;}
+            li{color: #DEE0EA;}
             blockquote{color: #A954CA;}
-            code{background-color: #2B3051;}
+            pre{background-color: #2B3051;}
             .hljs-keyword{color: #F3B549;}
         </style>
     </head>
