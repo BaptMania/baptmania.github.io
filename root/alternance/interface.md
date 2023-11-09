@@ -16,7 +16,7 @@ permalink: /alternance/interface
             h6{color: #37A9BE;}
             p{color: #DEE0EA;}
             li{color: #DEE0EA;}
-            blockquote{color: #A954CA;}
+            blockquote{color: #8E93AF;}
             pre{background-color: #2B3051;}
             .hljs-keyword{color: #F3B549;}
         </style>
