@@ -25,22 +25,25 @@ permalink: /alternance/interface
             <h1 id="programmation">Programmation</h1>
             <h3 id="imports">Imports</h3>
             <p>Pour débuter, nous devrons faire appel à toutes les librairies que nous auront besoin pour le bon fonctionnement du programme.</p>
-            <pre class="language-python">
-                <code class="lang-Python">
-                    <span class="hljs-keyword">import</span> tkinter <span class="hljs-keyword">as</span> tk  
-                    <span class="hljs-keyword">from</span> tkcalendar <span class="hljs-keyword">import</span> DateEntry  
-                    <span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> ttk  
-                    <span class="hljs-keyword">from</span> tkinter.messagebox <span class="hljs-keyword">import</span> showerror  
-                    <span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> ImageTk  
-                    <span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image                      
-                    <span class="hljs-keyword">import</span> <span class="hljs-built_in">time</span> 
-                    <span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> partial 
-                    <span class="hljs-keyword">from</span> encodeur_photo <span class="hljs-keyword">import</span> *  
-                    <span class="hljs-keyword">import</span> ImageEncoding  
-                    <span class="hljs-keyword">import</span> FacialRecognition  
-                    <span class="hljs-keyword">import</span> Picture
-                </code>
-            </pre>
+            <div class="code-zone">
+                <pre class="language-python">
+                    <code class="lang-Python">
+                        <span class="hljs-keyword">import</span> tkinter <span class="hljs-keyword">as</span> tk  
+                        <span class="hljs-keyword">from</span> tkcalendar <span class="hljs-keyword">import</span> DateEntry  
+                        <span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> ttk  
+                        <span class="hljs-keyword">from</span> tkinter.messagebox <span class="hljs-keyword">import</span> showerror  
+                        <span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> ImageTk  
+                        <span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image                      
+                        <span class="hljs-keyword">import</span> <span class="hljs-built_in">time</span> 
+                        <span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> partial 
+                        <span class="hljs-keyword">from</span> encodeur_photo <span class="hljs-keyword">import</span> *  
+                        <span class="hljs-keyword">import</span> ImageEncoding  
+                        <span class="hljs-keyword">import</span> FacialRecognition  
+                        <span class="hljs-keyword">import</span> Picture
+                    </code>
+                </pre>
+                <button type="button">Copier</button>
+            </div>
         <hr>
     <h3 id="la-classe-app">La classe App</h3>
     <p>Le programme sera une application et celle-ci nécessite une classe.</p>
