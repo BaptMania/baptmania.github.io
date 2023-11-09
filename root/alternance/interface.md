@@ -16,7 +16,7 @@ permalink: /alternance/interface
             h6{color: #37A9BE;}
             p{color: #DEE0EA;}
             li{color: #DEE0EA;}
-            .prog{background-color: #2B3051;}
+            pre{background-color: #2B3051;}
             .quote{color: #8E93AF;}
             .hljs-keyword{color: #F3B549;}
             .hljs-string{
@@ -42,7 +42,6 @@ permalink: /alternance/interface
         <h1 id="programmation">Programmation</h1>
         <h3 id="imports">Imports</h3>
         <p>Pour débuter, nous devrons faire appel à toutes les librairies que nous auront besoin pour le bon fonctionnement du programme.</p>
-        <div class="prog">
         <pre>
             <code class="lang-Python">
                 <span class="hljs-keyword">import</span> tkinter <span class="hljs-keyword">as</span> tk  
@@ -59,7 +58,6 @@ permalink: /alternance/interface
                 <span class="hljs-keyword">import</span> Picture
             </code>
         </pre>
-        </div>
     <hr>
 <h3 id="la-classe-app">La classe App</h3>
 <p>Le programme sera une application et celle-ci nécessite une classe.</p>
