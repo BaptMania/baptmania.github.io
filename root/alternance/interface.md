@@ -19,6 +19,7 @@ permalink: /alternance/interface
             .prog{background-color: #2B3051;}
             .quote{color: #8E93AF;}
             .hljs-keyword{color: #F3B549;}
+            .hljs-string{color: #36933C;}
         </style>
     </head>
 <body>
