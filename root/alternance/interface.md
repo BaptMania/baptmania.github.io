@@ -22,6 +22,7 @@ permalink: /alternance/interface
             .hljs-string{
                 color: #36933C;
                 font-style: italic;}
+            .hljs-self{color: #52337F;}
         </style>
     </head>
 <body>
@@ -67,7 +68,7 @@ permalink: /alternance/interface
 <pre>
     <code class="lang-Python">class App(tk.Tk):  
         <span class="hljs-string">"""Application d'encodage de photographies et de reconnaissance faciale"""</span>  
-        def __init__(<span class="hljs-keyword">self</span>):  
+        def __init__(<span class="hljs-self">self</span>):  
             <span class="hljs-keyword">super</span>().__init__()  
             #   Création des variables  
             <span class="hljs-keyword">self</span>._tab1 = <span class="hljs-literal">None</span>  
