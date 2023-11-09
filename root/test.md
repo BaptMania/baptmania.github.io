@@ -6,10 +6,11 @@ permalink: /test/
 <html>
     <head>
         <style>
-            html{background-color: #524A7C;}
-            body{background-color: #2B3573;}
+            html{background-color: #10111A;}
+            body{background-color: #1D2139;}
             h1{color: #37A9BE;}
             blockquote{color: #A954CA;}
+            .lang-Python{background-color: #2B3051;}
             .hljs-keyword{color: #F3B549;}
         </style>
     </head>
