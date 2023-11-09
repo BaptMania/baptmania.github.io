@@ -5,7 +5,7 @@ permalink: /alternance/interface
 ---
 <html>
     <head>
-        <link rel="stylesheet" href="../resources/stylesheet.min.css">
+        <link rel="stylesheet" href="../stylesheet.min.css">
     </head>
 <body>
     <h1 id="objectif">Objectif</h1>
