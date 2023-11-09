@@ -5,7 +5,7 @@ permalink: /alternance/interface
 ---
 <html>
     <head>
-        <link rel="stylesheet" href="https://github.com/BaptMania/baptmania.github.io/blob/main/resources/stylesheet.css">
+        <link rel="stylesheet" href="../resources/stylesheet.min.css">
     </head>
 <body>
     <h1 id="objectif">Objectif</h1>
