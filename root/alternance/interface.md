@@ -46,9 +46,9 @@ permalink: /alternance/interface
 <h4 id="initialisation">Initialisation</h4>
 <p>Il faut donc tout d&#39;abord initialiser la classe avec toutes les variables dont elle a besoin, ses variables de configuration et l&#39;exécution des méthodes obligatoires.</p>
 <pre>
-    <code class="lang-Python">class App(tk.Tk):  
+    <code class="lang-Python"><span class=".hjls-def">class</span> App(tk.Tk):  
         <span class="hljs-string">"""Application d'encodage de photographies et de reconnaissance faciale"""</span>  
-        def <span class="hljs-init">__init__</span>(<span class="hljs-self">self</span>):  
+        <span class=".hjls-def">def</span> <span class="hljs-init">__init__</span>(<span class="hljs-self">self</span>):  
             <span class="hljs-keyword">super</span>().<span class="hljs-init">__init__</span>()  
             #   Création des variables  
             <span class="hljs-self">self</span>._tab1 = <span class="hljs-literal">None</span>  
@@ -111,18 +111,22 @@ permalink: /alternance/interface
 <ol>
 <li>L&#39;onglet 1 :</li>
 </ol>
-<pre><code class="lang-Python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_tab_1</span><span class="hljs-params">(<span class="hljs-self">self</span>)</span></span>:  
-    <span class="hljs-self">self</span>._tab1 = ttk.Frame(<span class="hljs-self">self</span>.tabcontrol)  
-    <span class="hljs-self">self</span>.tabcontrol.add(<span class="hljs-self">self</span>._tab1, text=<span class="hljs-string">'Encodage'</span>)  
-    <span class="hljs-self">self</span>.tabcontrol.grid(row=<span class="hljs-number">0</span>, column=<span class="hljs-number">0</span>, sticky=<span class="hljs-string">"nw"</span>)  
-    <span class="hljs-self">self</span>.create_header_frame_image_encoding()  
-    <span class="hljs-self">self</span>.create_body_frame_image_encoding()  
-    <span class="hljs-self">self</span>.create_footer_frame_image_encoding()
-</code></pre>
+<pre>
+    <code class="lang-Python">
+        <span class="hljs-function">
+        <span class=".hjls-def">def</span> <span class="hljs-title">create_tab_1</span><span class="hljs-params">(<span class="hljs-self">self</span>)</span></span>:  
+        <span class="hljs-self">self</span>._tab1 = ttk.Frame(<span class="hljs-self">self</span>.tabcontrol)  
+        <span class="hljs-self">self</span>.tabcontrol.add(<span class="hljs-self">self</span>._tab1, text=<span class="hljs-string">'Encodage'</span>)  
+        <span class="hljs-self">self</span>.tabcontrol.grid(row=<span class="hljs-number">0</span>, column=<span class="hljs-number">0</span>, sticky=<span class="hljs-string">"nw"</span>)  
+        <span class="hljs-self">self</span>.create_header_frame_image_encoding()  
+        <span class="hljs-self">self</span>.create_body_frame_image_encoding()  
+        <span class="hljs-self">self</span>.create_footer_frame_image_encoding()
+    </code>
+</pre>
 <ol>
 <li>L&#39;onglet 2 :</li>
 </ol>
-<pre><code class="lang-Python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_tab_2</span><span class="hljs-params">(<span class="hljs-self">self</span>)</span></span>:  
+<pre><code class="lang-Python"><span class="hljs-function"><span class=".hjls-def">def</span> <span class="hljs-title">create_tab_2</span><span class="hljs-params">(<span class="hljs-self">self</span>)</span></span>:  
     <span class="hljs-self">self</span>._tab2 = ttk.Frame(<span class="hljs-self">self</span>.tabcontrol)  
     <span class="hljs-self">self</span>.tabcontrol.add(<span class="hljs-self">self</span>._tab2, text=<span class="hljs-string">'Reconnaissance Faciale'</span>)  
     <span class="hljs-self">self</span>.tabcontrol.grid(row=<span class="hljs-number">0</span>, column=<span class="hljs-number">0</span>, sticky=<span class="hljs-string">"nw"</span>)  
