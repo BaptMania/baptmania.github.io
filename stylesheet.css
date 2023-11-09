@@ -1,44 +1,66 @@
 html{background-color: #10111A;}
+
 body{background-color: #151827;
   margin: 0;
   font-family: 'Arial', sans-serif;}
+
 h1{color: #37A9BE;}
+
 h2{color: #37A9BE;}
+
 h3{color: #37A9BE;}
+
 h4{color: #37A9BE;}
+
 h5{color: #37A9BE;}
+
 h6{color: #37A9BE;}
+
 p{color: #DEE0EA;}
+
 li{color: #DEE0EA;}
+
 .Markdown pre{
   background: #2B3051;
   padding: 24px;
   color: #f7f8fb;
   border-radius: 16px;}
+
 .Markdown .code-zone {
   position: relative; /* Ajoutez cette ligne */
 }
+
 .Markdown .code-zone>.button-c{
   position: absolute;
   right: 24px;
   top: 24px;}
+
 .Markdown .code-zone>.button-c>.copy-b{background:#353F77;
   border-radius: 16px;
   padding: 6px 8px;
   transition: color .25s,background .25s;
   cursor: pointer}
+
 .copy-b:hover {
   background: #5054A2;
 }
+
 .language-python{background: #2B3051;}
+
 .quote{color: #8E93AF;}
+
 .hljs-keyword{color: #F3B549;}
+
 .hljs-string{
   color: #36933C;
   font-style: italic;}
+
 .hljs-self{color: #52337F;}
+
 .hljs-init{color: #CA22A1;}
+
 .hjls-def{color: #F288F3;}
+
 .top-bar {
   background-color: #2B3051;
   padding: 10px 20px;
