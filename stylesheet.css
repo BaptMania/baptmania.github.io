@@ -22,3 +22,6 @@ li{color: #DEE0EA;}
 .hljs-self{color: #52337F;}
 .hljs-init{color: #CA22A1;}
 .hljs-def{color: #F288F3;}
+.copy-b{position: absolute;
+  right: 24px;
+  top: 24px;}
