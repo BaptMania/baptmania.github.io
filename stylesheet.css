@@ -13,6 +13,14 @@ li{color: #DEE0EA;}
   padding: 24px;
   color: #f7f8fb;
   border-radius: 16px;}
+.Markdown .copy-b{position: absolute;
+  right: 24px;
+  top: 24px;
+  background:#353F77;
+  border-radius: 16px;
+  padding: 6px 8px;
+  transition: color .25s,background .25s;
+  cursor: pointer}
 .language-python{background: #2B3051;}
 .quote{color: #8E93AF;}
 .hljs-keyword{color: #F3B549;}
@@ -22,9 +30,3 @@ li{color: #DEE0EA;}
 .hljs-self{color: #52337F;}
 .hljs-init{color: #CA22A1;}
 .hljs-def{color: #F288F3;}
-.copy-b{position: absolute;
-  right: 24px;
-  top: 24px;
-  background:#353F77;
-  border-radius: 16px;
-  padding: 6px 8px;}
