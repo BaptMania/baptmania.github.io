@@ -7,6 +7,7 @@ permalink: /test/
     <head>
         <style>
             h1{color: #37A9BE;}
+            hljs-keyword{color: #F3B549}
         </style>
     </head>
 <body>
