@@ -1,5 +1,7 @@
 html{background-color: #10111A;}
-body{background-color: #151827;}
+body{background-color: #151827;
+  margin: 0;
+  font-family: 'Arial', sans-serif;}
 h1{color: #37A9BE;}
 h2{color: #37A9BE;}
 h3{color: #37A9BE;}
@@ -34,3 +36,27 @@ li{color: #DEE0EA;}
 .hljs-self{color: #52337F;}
 .hljs-init{color: #CA22A1;}
 .hjls-def{color: #F288F3;}
+.top-bar {
+  background-color: #2B3051;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #37A9BE;
+}
