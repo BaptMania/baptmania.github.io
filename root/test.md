@@ -7,7 +7,9 @@ permalink: /test/
     <head>
         <style>
             h1{color: #37A9BE;}
-            .hljs-keyword{color: #F3B549}
+            blockquote{color: #A954CA}
+            .hljs-keyword{color: #F3B549;}
+            
         </style>
     </head>
 <body>
@@ -30,14 +32,14 @@ permalink: /test/
         <pre>
             <code class="lang-Python">
                 <span class="hljs-keyword">import</span> tkinter <span class="hljs-keyword">as</span> tk  
-                from tkcalendar <span class="hljs-keyword">import</span> DateEntry  
-                from tkinter <span class="hljs-keyword">import</span> ttk  
-                from tkinter.messagebox <span class="hljs-keyword">import</span> showerror  
-                from PIL <span class="hljs-keyword">import</span> ImageTk  
-                from PIL <span class="hljs-keyword">import</span> Image                      
+                <span class="hljs-keyword">from</span> tkcalendar <span class="hljs-keyword">import</span> DateEntry  
+                <span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> ttk  
+                <span class="hljs-keyword">from</span> tkinter.messagebox <span class="hljs-keyword">import</span> showerror  
+                <span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> ImageTk  
+                <span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image                      
                 <span class="hljs-keyword">import</span> <span class="hljs-built_in">time</span> 
-                from functools <span class="hljs-keyword">import</span> partial 
-                from encodeur_photo <span class="hljs-keyword">import</span> *  
+                <span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> partial 
+                <span class="hljs-keyword">from</span> encodeur_photo <span class="hljs-keyword">import</span> *  
                 <span class="hljs-keyword">import</span> ImageEncoding  
                 <span class="hljs-keyword">import</span> FacialRecognition  
                 <span class="hljs-keyword">import</span> Picture
