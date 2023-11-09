@@ -16,15 +16,15 @@ permalink: /alternance/interface
             h6{color: #37A9BE;}
             p{color: #DEE0EA;}
             li{color: #DEE0EA;}
-            blockquote{color: #8E93AF;}
             pre{background-color: #2B3051;}
+            .quote{color: #8E93AF;}
             .hljs-keyword{color: #F3B549;}
         </style>
     </head>
 <body>
     <h1 id="objectif">Objectif</h1>
     <blockquote>
-        <p>L&#39;objectif de l&#39;Interface Homme Machine est de faire le lien entre les actions de l&#39;humain et celles de la machine. Elle permet donc à l&#39;utilisateur de demander au programme de réaliser une action précise ou d&#39;entrer certains paramètres manuellement, alors que le programme est déjà en cours d&#39;utilisation. L&#39;IHM permet également à l&#39;utilisateur de voir le programme en action pour interagir avec lui de manière plus aisée.</p>
+        <p class="quote">L&#39;objectif de l&#39;Interface Homme Machine est de faire le lien entre les actions de l&#39;humain et celles de la machine. Elle permet donc à l&#39;utilisateur de demander au programme de réaliser une action précise ou d&#39;entrer certains paramètres manuellement, alors que le programme est déjà en cours d&#39;utilisation. L&#39;IHM permet également à l&#39;utilisateur de voir le programme en action pour interagir avec lui de manière plus aisée.</p>
     </blockquote>
     <h1 id="r-flexion">Réflexion</h1>
     <p>Pour une IHM optimale, il est important de bien réfléchir à son organisation. En effet, il est impératif que l&#39;IHM soit intuitive pour que les utilisateurs puissent l&#39;utiliser à son plein potentiel sans difficulté.</p>
