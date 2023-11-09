@@ -7,6 +7,7 @@ permalink: /test/
     <head>
         <style>
             html{background-color: #524A7C;}
+            body{background-color: #2B3573;}
             h1{color: #37A9BE;}
             blockquote{color: #A954CA;}
             .hljs-keyword{color: #F3B549;}
