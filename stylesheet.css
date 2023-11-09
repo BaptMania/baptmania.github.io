@@ -27,6 +27,9 @@ li{color: #DEE0EA;}
   padding: 6px 8px;
   transition: color .25s,background .25s;
   cursor: pointer}
+.copy-b:hover {
+  background: #5054A2;
+}
 .language-python{background: #2B3051;}
 .quote{color: #8E93AF;}
 .hljs-keyword{color: #F3B549;}
