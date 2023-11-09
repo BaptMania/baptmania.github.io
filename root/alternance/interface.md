@@ -49,7 +49,7 @@ permalink: /alternance/interface
     <code class="lang-Python">class App(tk.Tk):  
         <span class="hljs-string">"""Application d'encodage de photographies et de reconnaissance faciale"""</span>  
         def <span class="hljs-init">__init__</span>(<span class="hljs-self">self</span>):  
-            <span class="hljs-keyword">super</span>().__init__()  
+            <span class="hljs-keyword">super</span>().<span class="hljs-init">__init__</span>()  
             #   Création des variables  
             <span class="hljs-self">self</span>._tab1 = <span class="hljs-literal">None</span>  
             <span class="hljs-self">self</span>._tab2 = <span class="hljs-literal">None</span>  
