@@ -17,7 +17,7 @@ li{color: #DEE0EA;}
   position: absolute;
   right: 24px;
   top: 24px;}
-.copy-b{background:#353F77;
+.Markdown .code-zone>.button-c>.copy-b{background:#353F77;
   border-radius: 16px;
   padding: 6px 8px;
   transition: color .25s,background .25s;
