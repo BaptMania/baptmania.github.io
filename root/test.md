@@ -52,65 +52,68 @@ permalink: /test/
 <p>Le programme sera une application et celle-ci nécessite une classe.</p>
 <h4 id="initialisation">Initialisation</h4>
 <p>Il faut donc tout d&#39;abord initialiser la classe avec toutes les variables dont elle a besoin, ses variables de configuration et l&#39;exécution des méthodes obligatoires.</p>
-<pre><code class="lang-Python">class App(tk.Tk):  
-    <span class="hljs-string">""</span><span class="hljs-string">"Application d'encodage de photographies et de reconnaissance faciale"</span><span class="hljs-string">""</span>  
-
-    def __init__(<span class="hljs-keyword">self</span>):  
-        <span class="hljs-keyword">super</span>().__init__()  
-        #   Création des variables  
-        <span class="hljs-keyword">self</span>._tab1 = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._tab2 = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._tab3 = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._header_image_encoding = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._button_ImageEncoding = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._body_image_encoding = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>.text_image_encoding = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._footer_image_encoding = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._exit_button = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._header_facial_recognition = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._button_facial_recognition = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._button_facial_recognition_terminate = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._body_facial_recognition = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._picture_facial_recognition = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>.text_facial_recognition = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._footer_facial_recognition = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._header_picture = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._first_name_picture = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._first_name_picture_var = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._first_name_picture_entry = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._last_name_picture = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._last_name_picture_var = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._last_name_picture_entry = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._status_picture = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._status_picture_var = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._status_picture_entry = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._birthday_picture = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._birthday = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._button_picture = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._button_save_picture = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._body_picture = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._text_picture = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._picture_label = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._footer_picture = <span class="hljs-literal">None</span>  
-        <span class="hljs-keyword">self</span>._button_save = <span class="hljs-literal">None</span>  
-        #   Configuration de la fenêtre principale  
-        <span class="hljs-keyword">self</span>.title(<span class="hljs-string">"Outil de reconnaissance faciale"</span>)  
-        <span class="hljs-keyword">self</span>.geometry('<span class="hljs-number">730</span>x625')  
-        <span class="hljs-keyword">self</span>.resizable(False, False)  
-        <span class="hljs-keyword">self</span>.tabcontrol = ttk.Notebook(<span class="hljs-keyword">self</span>)  
-        #   Configuration du style des différents Widgets  
-        <span class="hljs-keyword">self</span>.config(bg='#<span class="hljs-number">42495</span>D')  
-        <span class="hljs-keyword">self</span>.s = ttk.Style()  
-        <span class="hljs-keyword">self</span>.s.configure(<span class="hljs-symbol">'TFrame</span>', background='#<span class="hljs-number">42495</span>D')  
-        <span class="hljs-keyword">self</span>.s.configure(<span class="hljs-symbol">'Header</span>.TFrame', background='#<span class="hljs-number">42495</span>D')  
-        <span class="hljs-keyword">self</span>.s.configure(<span class="hljs-symbol">'Text</span>.TFrame', background='#<span class="hljs-number">606</span>C89')  
-        <span class="hljs-keyword">self</span>.s.configure(<span class="hljs-symbol">'Body</span>.TFrame', background='#<span class="hljs-number">42495</span>D')  
-        <span class="hljs-keyword">self</span>.s.configure(<span class="hljs-symbol">'Footer</span>.TFrame', background='#<span class="hljs-number">42495</span>D')  
-        #   Lancement des <span class="hljs-keyword">proc</span>édures initiales  
-        <span class="hljs-keyword">self</span>.create_tab_1()  
-        <span class="hljs-keyword">self</span>.create_tab_2()  
-        <span class="hljs-keyword">self</span>.create_tab_3()
-</code></pre>
+<pre>
+    <code class="lang-Python">class App(tk.Tk):  
+        <span class="hljs-string">""</span>
+        <span class="hljs-string">"Application d'encodage de photographies et de reconnaissance faciale"</span>
+        <span class="hljs-string">""</span>  
+        def __init__(<span class="hljs-keyword">self</span>):  
+            <span class="hljs-keyword">super</span>().__init__()  
+            #   Création des variables  
+            <span class="hljs-keyword">self</span>._tab1 = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._tab2 = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._tab3 = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._header_image_encoding = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._button_ImageEncoding = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._body_image_encoding = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>.text_image_encoding = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._footer_image_encoding = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._exit_button = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._header_facial_recognition = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._button_facial_recognition = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._button_facial_recognition_terminate = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._body_facial_recognition = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._picture_facial_recognition = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>.text_facial_recognition = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._footer_facial_recognition = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._header_picture = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._first_name_picture = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._first_name_picture_var = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._first_name_picture_entry = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._last_name_picture = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._last_name_picture_var = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._last_name_picture_entry = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._status_picture = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._status_picture_var = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._status_picture_entry = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._birthday_picture = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._birthday = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._button_picture = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._button_save_picture = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._body_picture = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._text_picture = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._picture_label = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._footer_picture = <span class="hljs-literal">None</span>  
+            <span class="hljs-keyword">self</span>._button_save = <span class="hljs-literal">None</span>  
+            #   Configuration de la fenêtre principale  
+            <span class="hljs-keyword">self</span>.title(<span class="hljs-string">"Outil de reconnaissance faciale"</span>)  
+            <span class="hljs-keyword">self</span>.geometry('<span class="hljs-number">730</span>x625')  
+            <span class="hljs-keyword">self</span>.resizable(False, False)  
+            <span class="hljs-keyword">self</span>.tabcontrol = ttk.Notebook(<span class="hljs-keyword">self</span>)  
+            #   Configuration du style des différents Widgets  
+            <span class="hljs-keyword">self</span>.config(bg='#<span class="hljs-number">42495</span>D')  
+            <span class="hljs-keyword">self</span>.s = ttk.Style()  
+            <span class="hljs-keyword">self</span>.s.configure(<span class="hljs-symbol">'TFrame</span>', background='#<span class="hljs-number">42495</span>D')  
+            <span class="hljs-keyword">self</span>.s.configure(<span class="hljs-symbol">'Header</span>.TFrame', background='#<span class="hljs-number">42495</span>D')  
+            <span class="hljs-keyword">self</span>.s.configure(<span class="hljs-symbol">'Text</span>.TFrame', background='#<span class="hljs-number">606</span>C89')  
+            <span class="hljs-keyword">self</span>.s.configure(<span class="hljs-symbol">'Body</span>.TFrame', background='#<span class="hljs-number">42495</span>D')  
+            <span class="hljs-keyword">self</span>.s.configure(<span class="hljs-symbol">'Footer</span>.TFrame', background='#<span class="hljs-number">42495</span>D')  
+            #   Lancement des <span class="hljs-keyword">proc</span>édures initiales  
+            <span class="hljs-keyword">self</span>.create_tab_1()  
+            <span class="hljs-keyword">self</span>.create_tab_2()  
+            <span class="hljs-keyword">self</span>.create_tab_3()
+    </code>
+</pre>
 <hr>
 <h4 id="les-m-thodes-obligatoires">Les méthodes obligatoires</h4>
 <p>Les méthodes obligatoires sont ici la création des trois onglets de la fenêtre.</p>
