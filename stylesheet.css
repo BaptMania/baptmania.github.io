@@ -1,8 +1,12 @@
-html{background-color: #10111A;}
+html {
+  background-color: #10111A;
+}
 
-body{background-color: #151827;
+body {
+  background-color: #151827;
   margin: 0;
-  font-family: 'Arial', sans-serif;}
+  font-family: 'Arial', sans-serif;
+}
 
 h1{color: #37A9BE;}
 
@@ -62,7 +66,6 @@ li{color: #DEE0EA;}
 .hjls-def{color: #F288F3;}
 
 .top-bar {
-  background-color: #2B3051;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
